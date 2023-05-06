@@ -20,7 +20,7 @@ function superFunc() {
   const copyBtn = document.createElement("button");
   copyBtn.textContent = "Copy";
   copyBtn.onclick = () => {
-    const textToCopy = `review_cache.insert(${str.trim()})`;
+    const textToCopy = `review_cache.insert(JSON.parse(${JSON.stringify(str.trim())}))`;
     navigator.clipboard.writeText(textToCopy)
       .then(() => {
         console.log("Text copied to clipboard");
@@ -36,6 +36,7 @@ function superFunc() {
   outputter.appendChild(copyBtn);
   outputter.appendChild(pre);
 }
+
 
 // Paste your data here in place of the []
 // If you have a second list, paste that to the listB
