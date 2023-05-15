@@ -18,3 +18,6 @@ Merges 2 arrays from 2 devices to 1 or just sorts out data.
 
 
 You sohuld now have sorted/merged reviews visible.
+
+Short video:
+https://youtu.be/NLngiWX0kSo
